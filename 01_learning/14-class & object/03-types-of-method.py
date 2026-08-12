@@ -25,6 +25,9 @@ class Test :
         
         @classmethod
         def f3(cls) : # Class Method 
+
+              # x+=1
+              # Test.x+=1
               print("i am class Method :")
               cls.x+=1
               print(cls.x)
@@ -40,6 +43,7 @@ t2=Test(5,6) # __init__(t2,5,6)
 t1.f1() # Test.f1(t1)
 t2.f1() # Test.f2(t2)
 Test.f1(t1) 
+
 #if we accesing the instance method through the class object 
 #then we have to give argument as color object
 
@@ -49,6 +53,7 @@ Test.f1(t1)
 
 """
 #ways to call static method 
+
 # No implicit argument
 t1.f2("Hello")
 t2.f2("Rajneesh")
@@ -67,6 +72,7 @@ Test.f2("Kumar") #Preferred
 #Ways to call class method
 t1.f3() # Test.f3(Test)
 t2.f3() # Test.f3(Test)
+
 Test.f3() #Test.f3(Test) #Preferred
 
 

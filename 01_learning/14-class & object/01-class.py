@@ -6,10 +6,13 @@ class Test:
 
  # How to Create instance  object of the class
 
- t1=Test()  # Class Test  Empty object hai iska refference  t1 me hai
- t2=Test() # jab v ham class name ke aage () karenge to us class ka object banega and wo empty rahega  
+t1=Test()  # Class Test  Empty object hai iska refference  t1 me hai
+t2=Test() # jab v ham class name ke aage () karenge to us class ka object banega and wo empty rahega  
 
 
+print(Test)
+print(id(Test))
+print(type(Test))
 
 
 

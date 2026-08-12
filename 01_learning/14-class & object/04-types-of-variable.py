@@ -30,6 +30,7 @@
 
 # #Class Object Variable | static variable
 # #ClassObject.variable
+
 # class Test:
 #     x1=10
 #     def __init__(self):

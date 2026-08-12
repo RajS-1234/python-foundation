@@ -28,10 +28,7 @@
 # print(id(y))
 
 
-
-
 # # print is not a function,it is reference variable and ref vari reffer to to the function object
-
 
 # 🔹 Function object ka matlab kya?
 
@@ -44,8 +41,6 @@
 # Return ho sakta hai
 
 # Call ho sakta hai
-
-
 
 # print("hello")
 # print(type(print))
