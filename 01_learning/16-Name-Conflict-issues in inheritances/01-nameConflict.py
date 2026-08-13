@@ -64,4 +64,15 @@ The Parent's __init__() was never called.
 # c=Child()
 # print(c.x)
 
-    
+
+
+#Class object variable name conflict
+
+class A:
+    x=10
+class B(A):
+    x=20
+
+
+print(A.x)
+print(B.x)  
