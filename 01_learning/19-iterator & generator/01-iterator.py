@@ -1,4 +1,4 @@
-l1 = [10, 20, 30]
+# l1 = [10, 20, 30]
 
 # it = iter(l1)
 
@@ -56,25 +56,25 @@ l1 = [10, 20, 30]
 
 
 
-class iterator :
-    def __init__(self,list) :
-        self.list = list
-        self.currentPosition=0
+# class iterator :
+#     def __init__(self,list) :
+#         self.list = list
+#         self.currentPosition=0
 
-    def __next__(self):
-        while  self.currentPosition < len(self.list) :
-            value = self.list[self.currentPosition]
-            self.currentPosition+=1
-            return value
-        raise StopIteration
+#     def __next__(self):
+#         while  self.currentPosition < len(self.list) :
+#             value = self.list[self.currentPosition]
+#             self.currentPosition+=1
+#             return value
+#         raise StopIteration
 
-it = iterator(l1)  
-print(it.list)
-print(it.currentPosition)
+# it = iterator(l1)  
+# print(it.list)
+# print(it.currentPosition)
 
-print(next(it))      
-print(next(it))
-print(next(it))       
+# print(next(it))      
+# print(next(it))
+# print(next(it))       
         
 
     
@@ -169,3 +169,29 @@ This is how Python knows:
 
 
 """
+
+arr=[1,2,8,10,11,12,19]
+
+def arr1(arr,tar) :
+    low = 0
+    high = len(arr)-1
+
+    while low < high :
+        mid = (low+high)//2
+        if arr[mid] <= tar :
+            low = mid+1
+        else :
+            high = mid
+    if arr[low] >= tar :
+        return low
+    return -1
+
+print(arr1(arr,0))
+
+
+
+def findPeakElement(self, nums: List[int]) -> int:
+    low =0
+    high = len(nums)
+
+    
